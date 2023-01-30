@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 10px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+  max-width: 1400px;
+  margin: auto;
+}
+.card {
+  width: 80%;
+  min-height: 200px;
+  background-color: aliceblue;
+  margin-top: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+/* top */
+.form {
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #d96e2e;
+  padding: 20px;
+  flex: 1;
+}
+.top h1 {
+  /* margin: 10px; */
+  color: #000;
+  text-transform: capitalize;
+}
+
+.todos-container{
+    flex: 1;
+}
+
+
+#mytask{
+    padding: 20px 10px;
+}
+.task-item{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border: 1px solid #eee;
+    padding: 10px 10px;
+    gap: 12px;
+}
+.task-item.completed{
+    background-color: rgb(212, 212, 212);
+}
+
+.status{
+    color: rgb(236, 9, 180);
+    display: block;
+    padding: 10px;
+}
+.task-body{
+    flex: 1;
+}
+
+.task-item h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.task-item p{
+    font-size: 16px;
+}
+
+.task-item:hover{
+    background-color: rgb(233, 232, 232);
+}
+
+.task-item input{
+    height: 20px;
+    width: 20px;
+}
+.task-item .due-date{
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+}
+.task-item p{
+    flex:1;
+}
+
+.task-item .close{
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.task-item .close:hover{
+    background-color: rgb(239, 144, 144);
+}
+
+
+/* Form */
+.top-inputs{
+    padding: 20px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+.input-container .input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.input-container label{
+    font-size: 16px;
+    color: #0e1a2d;
+}
+.button-container button{
+    padding: 10px 40px;
+    background-color: #0e1a2d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .card{
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>My Todos App</h1> 
+        <div class="card">
+            <div class="form">
+                <div class="form-inputs">
+                    <div class="input-container">
+                        <label>Title</label>
+                        <input type="text" id="title-input" class="input" placeholder="Enter todo" />
+                    </div>
+                    <div class="input-container">
+                        <label>Due Date</label>
+                        <input type="datetime-local" class="input" id="date-input" placeholder="Enter todo" />
+                    </div>
+                    <div class="input-container">
+                        <label>Description</label>
+                        <textarea class="input" id="description-input" rows="4" placeholder="Enter todo" ></textarea>
+                    </div>
+                    <div class="button-container ">
+                        <button id="" onclick="newTodoSubmit()">Add</button>
+                        <button id="" onclick="editTodoSubmit()">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="todos-container">
+                <ul id="mytask"></ul>
+            </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
